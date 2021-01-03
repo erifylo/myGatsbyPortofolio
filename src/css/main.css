@@ -11,7 +11,7 @@ Variables
 ===============
 */
 
-:root {
+:root { 
   /* dark shades of primary color*/
   /* --clr-primary-1: hsl(43, 86%, 17%); */
   --clr-primary-1: rgb(9,87,121);
@@ -51,21 +51,7 @@ Variables
   --fixed-width: 700px;
 }
 
-.dark {
-    /* dark shades of primary color*/
-  /* --clr-primary-1: hsl(43, 86%, 17%); */
-  --clr-primary-1: rgb(9,87,121);
-  --clr-primary-2: rgb(11,104,144);
-  --clr-primary-3: rgb(12,121,168);
-  --clr-primary-4: rgb(14,138,192);
-  --clr-primary-5: rgba(0,138,196,0.77);
-  /* lighter shades of primary color */
-  --clr-primary-6: rgb(16,155,216);
-  --clr-primary-7: rgb(23, 63, 80);
-  --clr-primary-8: rgb(17, 59, 77);
-  --clr-primary-9: #00727e;
-  --clr-primary-10:#002b2f;
-}
+
 
 /*
 =============== 
@@ -464,6 +450,9 @@ Hero
   margin-top: 1.25rem;
 }
 
+.hero a:hover {
+  color: var( --clr-grey-8)
+}
 
 
 @media screen and (min-width: 992px) {
@@ -790,11 +779,28 @@ Footer
   place-items: center;
 }
 .footer h4 {
-  margin-top: 0.5rem;
-  color: var(--clr-white);
-  font-weight: normal;
-  text-transform: uppercase;
+  color: grey;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: inherit;
+    font-size: 1rem;
 }
+
+.footer span a {
+  color: grey;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: inherit;
+}
+.footer span a:hover {
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+
 .footer h4 span {
   color: var(--clr-primary-5);
 }
@@ -806,6 +812,14 @@ Footer
 }
 .footer .social-link:hover {
   color: var(--clr-primary-5);
+}
+
+.footer hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  width: 100%;
+  border-top: 2px solid hsla(0,0%,100%,.1);
 }
 /*
 ===============
@@ -875,7 +889,7 @@ About Page
 }
 @media screen and (min-width: 992px) {
   .about-center {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
     column-gap: 4rem;
@@ -887,6 +901,47 @@ About Page
   .about-text {
     grid-column: 6 / -1;
   }
+}
+
+.polaroid section {
+  background: #ffffff;
+  display: inline-block;
+  margin: 55px 75px 30px;
+  padding: 15px 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -webkit-transition: all .20s linear;
+  -moz-transition: all .20s linear;
+  transition: all .20s linear;
+  z-index: 0;
+  position: relative;
+  
+}
+.polaroid {
+  margin-top: -50px;
+}
+.polaroid section:after {
+  color: #333;
+  font-size: 25px;
+  content: attr(title);
+  position: relative;
+  top: 15px;
+}
+.polaroid img {
+  display: block;
+  width: 315px;
+}
+.polaroid section:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 10;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
 }
 /*
 ===============

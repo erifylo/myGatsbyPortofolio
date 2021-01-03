@@ -1,29 +1,30 @@
 import React from "react"
 import {
-  FaFacebookSquare,
+  FaGithubSquare,
   FaLinkedin,
-  FaDribbbleSquare,
+  FaEnvelopeSquare,
   FaBehanceSquare,
   FaTwitterSquare,
 } from "react-icons/fa"
 
+
 const data = [
   {
     id: 1,
-    icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
-    url: "https://www.twitter.com",
+    icon: <FaGithubSquare className="social-icon"></FaGithubSquare>,
+    url: "https://github.com/erifylo",
   },
   {
     id: 2,
     icon: <FaLinkedin className="social-icon"></FaLinkedin>,
-    url: "https://www.twitter.com",
+    url: "https://www.linkedin.com/in/erifyli-evangelou/",
   },
   {
     id: 3,
-    icon: <FaDribbbleSquare className="social-icon"></FaDribbbleSquare>,
-    url: "https://www.twitter.com",
+    icon: <FaEnvelopeSquare className="social-icon"></FaEnvelopeSquare>,
+    url: "mailto:erif.evangelou@gmail.com",
   },
-  {
+ /*  {
     id: 4,
     icon: <FaBehanceSquare className="social-icon"></FaBehanceSquare>,
     url: "https://www.twitter.com",
@@ -31,8 +32,8 @@ const data = [
   {
     id: 5,
     icon: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
-    url: "https://www.twitter.com",
-  },
+    url: "https://www.twitter.com/erifyli",
+  }, */
 ]
 const links = data.map(link => {
   return (

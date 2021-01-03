@@ -17,13 +17,15 @@ export default ({ data }) => {
   } = data
 
   return (
+   
     <Layout>
     <SEO title="Home" description="this is our homepage"/>
       <Hero />
       <Services />
       <Jobs />
-      <Projects projects={projects} title="featured projects" showLink />
+      <Projects projects={projects} title="Featured projects" showLink />
     </Layout>
+ 
   )
 }
 export const query = graphql`

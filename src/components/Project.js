@@ -2,8 +2,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import Image from "gatsby-image"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
+import Fade from 'react-reveal/Fade';
+
 const Project = ({description, title, github, stack, url, image, index}) => {
-  return <article className="project">
+  return  <Fade left>
+  <article className="project">
 
 
   { image && <Image fluid={image.childImageSharp.fluid} className="project-img"/>}
@@ -28,6 +31,7 @@ const Project = ({description, title, github, stack, url, image, index}) => {
   </div>
 </div>
   </article>
+  </Fade>
 }
 
 Project.propTypes = {

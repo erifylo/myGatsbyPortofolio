@@ -1,16 +1,21 @@
 import React from "react"
 import Title from "./Title"
 import services from "../constants/services"
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
+
+
 const Services = () => {
 
 
 
   return <section className="section bg-grey">
-    <Title title="Skills" />
+      
+  <Title title="Skills" />  
     <div className="section-center services-center">
       {services.map((service) => {
        const {id, icon, title, text} = service
-        return <article key={id} className="service">
+        return      <Zoom top><article key={id} className="service">
        
 
           {icon}
@@ -20,6 +25,7 @@ const Services = () => {
           <p>{text}</p>
           
         </article>
+        </Zoom>
        
       })}
     </div>

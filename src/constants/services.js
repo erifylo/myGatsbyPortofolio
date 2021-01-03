@@ -17,6 +17,6 @@ export default [
     id: 3,
     icon: <FaFileCode className="service-icon" />,
     title: "Fullstack",
-    text: `I have worked using both my frontend and backend skills, please check in the projects section to see examples of my work.`,
+    text: `I developed projects using both my frontend and backend skills. Please check on the projects section to see examples of my work!`,
   },
 ]

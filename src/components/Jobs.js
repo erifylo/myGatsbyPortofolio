@@ -3,6 +3,8 @@ import Title from "./Title"
 import { FaAngleDoubleRight } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
+import Flip from 'react-reveal/Flip';
+
 
 const query = graphql`
   {
@@ -31,7 +33,7 @@ const Jobs = () => {
   console.log(company, position, date, desc)
   return (
     <section className="section jobs">
-      <Title title="experience" />
+     <Flip top>   <Title title="Experience" /></Flip>
       <div className="jobs-center">
         <div className="btn-container">
           {jobs.map((item, index) => {
