@@ -6,6 +6,7 @@ import Image from "gatsby-image"
 import SEO from "../components/SEO"
 import Slide from "react-reveal/Slide"
 import Zoom from "react-reveal/Zoom"
+import { Link } from "gatsby"
 
 const About = ({
   data: {
@@ -44,6 +45,9 @@ const About = ({
                 return <span key={item.id}>{item.title}</span>
               })}
             </div>
+            <a href="https://drive.google.com/file/d/16uDMKbkgv1Ho7ZPNFfZOZQLcMHvL8d4H/view?usp=sharing" className="btn" style = {{marginTop: 20}}>
+              Resume here!
+            </a>
           </article>
         </div>
       </section>
