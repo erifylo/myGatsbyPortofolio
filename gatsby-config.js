@@ -8,10 +8,10 @@ module.exports = {
   siteMetadata: {
     title: "Erifyli Evangelou",
     description: "This is Erifyli Evangelou Portfolio Site",
-    author: "@webdev",
+    author: "@erifyli",
     twitterUsername: "@erifyli",
-    image: "/twitter-img.png",
-    siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
+    image: "/linkedin-img.png",
+    siteUrl: "https://erifyli.netlify.app/",
   },
   plugins: [
     `gatsby-transformer-sharp`,

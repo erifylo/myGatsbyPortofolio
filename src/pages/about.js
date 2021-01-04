@@ -13,7 +13,6 @@ const About = ({
     about: { nodes },
   },
 }) => {
-  console.log(nodes[0])
   const { title, info, stack, image } = nodes[0]
 
   return (
